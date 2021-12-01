@@ -1,16 +1,12 @@
-//The click functionality
-$('#click').on('click', function() {
-    if ($('#events').text() === 'show') {
+$(document).ready(function() {
+    $("#events").click(function() {
+        $("#bash").toggle();
+    });
+});
 
-        // This block is executed when
-        // you click the event button
-        $('#events').text('hide');
-        $('#event-info').css('display', 'flex');
-    } else {
-
-        // This block is executed when
-        // you click the event report button
-        $('#event-report').text('show');
-        $('#event-info').css('display', 'none');
-    }
+$("button#submit").click(function() {
+    $("#event-info").hide();
+});
+$("button#submit").click(function() {
+    $("#section").show();
 });
